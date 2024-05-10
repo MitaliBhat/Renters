@@ -1,0 +1,149 @@
+* {
+    list-style-type: none;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Rubik', sans-serif;
+}
+
+.sidebar {
+    z-index: 0;
+    position: fixed;
+    top: 60px;
+    left: -300px;
+    width: 300px;
+    height: 92vh;
+    /* background: lavender; */
+    background: linear-gradient(to right, rgb(199, 243, 225), rgb(209, 205, 250));
+    transition: all 0.5s ease;
+    overflow-y: auto;
+    scrollbar-width: none;
+}
+
+.sidebar header {
+    font-size: 22px;
+    background: midnightblue;
+    color: white;
+    text-align: center;
+    line-height: 50px;
+    user-select: none;
+}
+
+.sidebar ul {
+    position: relative;
+}
+
+.sidebar ul li a {
+    display: flex;
+    /* display: block; */
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    border-bottom: 1px solid gray;
+    line-height: 50px;
+    text-align: left;
+    padding-left: 40px;
+    color: black;
+    font-size: 15px;
+    transition: 0.4s;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.sidebar ul li:hover a {
+    padding-left: 50px;
+}
+
+#check {
+    display: none;
+}
+
+label #btn,
+label #cancel {
+    /* position: absolute; */
+    position: fixed;
+    cursor: pointer;
+    /* background: black; */
+    /* border-radius: 5px; */
+}
+
+label #btn {
+    z-index: 10;
+    top: 70px;
+    left: 10px;
+    font-size: 25px;
+    border-radius: 5px;
+    background: black;
+    color: white;
+    padding: 5px 10px;
+    transition: all 0.5s ease-in;
+}
+
+label #cancel {
+    top: 70px;
+    left: -300px;
+    opacity: 0;
+    border-radius: 100%;
+    font-size: 20px;
+    background: black;
+    color: white;
+    padding: 4px 8px;
+    transition: all 0.5s ease-out;
+}
+
+#check:checked~.sidebar {
+    left: 0;
+}
+
+#check:checked~label #btn {
+    pointer-events: none;
+    z-index: 0;
+    transition: all 0s ease-out;
+}
+
+#check:checked~label #cancel {
+    z-index: 10;
+    left: 310px;
+    opacity: 1;
+}
+
+#check:checked~div .container {
+    opacity: 0.5;
+    background: black;
+    transition: 0.5s;
+}
+
+.sidebar ul span {
+    position: absolute;
+    right: 20px;
+    font-size: 25px;
+}
+
+.sidebar ul ul {
+    position: fixed;
+    left: 300px;
+    width: 300px;
+    top: 110px;
+    height: 85vh;
+    display: none;
+    line-height: 50px;
+    border-radius: 0px 30px;
+    background: linear-gradient(to right, rgb(199, 243, 225), rgb(209, 205, 250));
+    transition: all 0.5s ease;
+    overflow-y: auto;
+    scrollbar-width: none;
+}
+
+.sidebar ul ul li:hover a {
+    top: 0;
+    padding-left: 70px;
+}
+
+.sidebar ul .dropdown {
+    position: relative;
+}
+
+.sidebar ul .dropdown:hover ul {
+    display: initial;
+}

@@ -1,0 +1,251 @@
+* {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Rubik', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    overflow: hidden;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    min-width: 100vw;
+    /* background: linear-gradient(to top right, black, #830823); */
+    background: rgb(104, 7, 7);
+    background: -moz-linear-gradient(to bottom right, rgba(104, 7, 7, 1) 0%, rgba(2, 0, 36, 1) 50%, rgba(104, 7, 7, 1) 100%);
+    background: -webkit-linear-gradient(to bottom right, rgba(104, 7, 7, 1) 0%, rgba(2, 0, 36, 1) 50%, rgba(104, 7, 7, 1) 100%);
+    background: linear-gradient(to bottom right, rgba(104, 7, 7, 1) 0%, rgba(2, 0, 36, 1) 50%, rgba(104, 7, 7, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#680707", endColorstr="#680707", GradientType=1);
+}
+
+.form-box {
+    top: 40px;
+    position: relative;
+}
+
+.form-box .squares {
+    position: absolute;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.2);
+}
+
+.form-box .squares:nth-child(1) {
+    top: -50px;
+    right: -60px;
+    width: 90px;
+    height: 90px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    animation: animate 10s linear infinite;
+}
+
+.form-box .squares:nth-child(2) {
+    top: 150px;
+    left: -100px;
+    width: 110px;
+    height: 110px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    z-index: 2;
+    animation: animate 10s linear infinite;
+}
+
+.form-box .squares:nth-child(3) {
+    bottom: 20px;
+    right: -60px;
+    width: 70px;
+    height: 70px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    z-index: 2;
+    animation: animate 10s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        transform: translateY(-35px) ease-in;
+    }
+    50% {
+        transform: translateY(35px);
+    }
+}
+
+.login-form-container {
+    position: relative;
+    width: 400px;
+    min-height: 400px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.login-form {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 40px;
+}
+
+.login-form h2 {
+    position: relative;
+    color: whitesmoke;
+    font-size: 25px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 40px;
+}
+
+.login-form h2::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 50px;
+    height: 4px;
+    background: whitesmoke;
+}
+
+#eyetoggle {
+    position: absolute;
+    top: 180px;
+    right: 50px;
+    transform: rotateY(-50%);
+    width: 20px;
+    height: 20px;
+    background-size: cover;
+    cursor: pointer;
+    background-image: url(/css/icon/showeye.png);
+}
+
+#eyetoggle.hide {
+    background-image: url(/css/icon/hideeye.png);
+    background-size: cover;
+}
+
+.login-form .login-input {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.login-form .login-input input {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    border-radius: 35px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: whitesmoke;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.login-form .login-input input[type="submit"] {
+    background: whitesmoke;
+    color: black;
+    max-width: 120px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.cont {
+    font-size: 11px;
+    color: whitesmoke;
+}
+
+.cont a {
+    text-decoration: none;
+    color: gray;
+}
+
+.forget-pass {
+    margin-top: 10px;
+    color: whitesmoke;
+    font-size: 14px;
+}
+
+.forget-pass a {
+    color: whitesmoke;
+    font-weight: 600;
+}
+
+.login-social {
+    position: relative;
+    color: whitesmoke;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: 10px;
+}
+
+.social-icons ul {
+    display: flex;
+    list-style-type: none;
+    position: relative;
+}
+
+.social-icons ul li {
+    position: relative;
+    padding: 5px;
+}
+
+.fa {
+    padding: 10px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-google {
+    background: #dd4b39;
+    color: white;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}

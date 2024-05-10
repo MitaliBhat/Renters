@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rentors : Renting the way you like it</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@200&family=Merriweather&family=Montserrat&family=Open+Sans:wght@300;400&family=Poppins&family=Roboto+Slab&family=Roboto:wght@300&family=Rubik:wght@300&family=Ubuntu:wght@300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/imgbannerstyle.css" />
+    <link rel="stylesheet" href="css/sidebar.css" />
+    <link rel="stylesheet" href="css/flex-container.css" />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="js/imgbanner.js" type="text/javascript"></script>
+    <link rel="icon" href="css/icon/favicon1.ico" type="image/icon" sizes="16x16" />
+</head>
+
+<body>
+
+    <!-----------------------------HEADER----------------------------------->
+    <header>
+        <a id="top"></a>
+        <!------------------------------Navbar------------------------------>
+        <nav class="navbar">
+            <div class="logo"><img class="logoimg" src="css/icon/logo.png" /></div>
+            <input type="checkbox" id="click">
+            <label for="click" class="menu-btn">
+                <i class="fas fa-bars"></i> <!-- menu btn -->
+            </label>
+            <div class="search"><input class="searchbar" type="text" placeholder="Search..">
+                <img class="searchbar-searchicon" src="css/icon/search2.png">
+            </div>
+            <ul>
+                <li><a class="active" href="homepage.html">Home</a></li>
+                <li><a href="account.html">Account</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <div><img class="cart-icon" src="css/icon/carts1.png"></div>
+            </ul>
+        </nav>
+        <!--------------------------------------------------------------------->
+    </header>
+    <!------------------------------------------------------------------------->
+
+    <!-----------------------------Sidebar--------------------------------->
+    <input type="checkbox" id="check">
+    <label for="check">
+        <i class="fas fa-bars" id="btn"></i>
+        <i class="fas fa-times" id="cancel"></i>
+    </label>
+    <div class="sidebar">
+        <header>Trending</header>
+        <ul>
+            <li>
+                <a href="#"><i class="fas fa-cars"></i>Best Sellers</a>
+            </li>
+            <li>
+                <a href="#"><i class="fas fa-cars"></i>New Launches</a>
+            </li>
+            <li>
+                <a href="#"><i class="fas fa-cars"></i>Today's Deals</a>
+            </li>
+        </ul>
+        <header>Category</header>
+        <ul>
+            <li class="dropdown">
+                <a href="mobiles.html" target="blank">Mobiles</a>
+            </li>
+            <li class="dropdown">
+                <a href="#">Fashion<span>&rsaquo;</span></a>
+                <ul>
+                    <li>
+                        <a href="#">Women Ethnic</a>
+                    </li>
+                    <li>
+                        <a href="#">Women Western</a>
+                    </li>
+                    <li>
+                        <a href="#">Women Footwear</a>
+                    </li>
+                    <li>
+                        <a href="#">Men's Top Wear</a>
+                    </li>
+                    <li>
+                        <a href="#">Men's Bottom Wear</a>
+                    </li>
+                    <li>
+                        <a href="#">Men Footwear</a>
+                    </li>
+                    <li>
+                        <a href="#">Kids Wear</a>
+                    </li>
+                    <li>
+                        <a href="#">Winter Wear</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#">Watches and Accessories<span>&rsaquo;</span></a>
+                <ul>
+                    <li>
+                        <a href="#">Men & Women Watches</a>
+                    </li>
+                    <li>
+                        <a href="#">Men & Women Sunglasses</a>
+                    </li>
+                    <li>
+                        <a href="#">Wallets</a>
+                    </li>
+                    <li>
+                        <a href="#">Belts</a>
+                    </li>
+                    <li>
+                        <a href="#">Women Fashion Jewellery</a>
+                    </li>
+                    <li>
+                        <a href="#">Men Fashion Jewellery</a>
+                    </li>
+                    <li>
+                        <a href="#">Precious Jewellery</a>
+                    </li>
+                    <li>
+                        <a href="#">Kids Accessories</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#">Bags, Suitcases & Luggages<span>&rsaquo;</span></a>
+                <ul>
+                    <li>
+                        <a href="#">Backpacks</a>
+                    </li>
+                    <li>
+                        <a href="#">Suitcases & Trolleys</a>
+                    </li>
+                    <li>
+                        <a href="#">Dufflebags</a>
+                    </li>
+                    <li>
+                        <a href="#">Handbags</a>
+                    </li>
+                    <li>
+                        <a href="#">Slingbags</a>
+                    </li>
+                    <li>
+                        <a href="#">Rucksacks</a>
+                    </li>
+                    <li>
+                        <a href="#">Women clutches & Wallets</a>
+                    </li>
+                    <li>
+                        <a href="#">Travel Accessories</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#">Automobile<span>&rsaquo;</span></a>
+                <ul>
+                    <li>
+                        <a href="#">1Automobile</a>
+                    </li>
+                    <li>
+                        <a href="#">2Automobile</a>
+                    </li>
+                    <li>
+                        <a href="#">3Automobile</a>
+                    </li>
+                    <li>
+                        <a href="#">4Automobile</a>
+                    </li>
+                    <li>
+                        <a href="#">5Automobile</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#">Books & references<span>&rsaquo;</span></a>
+                <ul>
+                    <li>
+                        <a href="#">1Books & references</a>
+                    </li>
+                    <li>
+                        <a href="#">2Books & references</a>
+                    </li>
+                    <li>
+                        <a href="#">3Books & references</a>
+                    </li>
+                    <li>
+                        <a href="#">4Books & references</a>
+                    </li>
+                    <li>
+                        <a href="#">5Books & references</a>
+                    </li>
+                    <li>
+                        <a href="#">6Books & references</a>
+                    </li>
+                    <li>
+                        <a href="#">7Books & references</a>
+                    </li>
+                    <li>
+                        <a href="#">8Books & references</a>
+                    </li>
+                    <li>
+                        <a href="#">9Books & references</a>
+                    </li>
+                    <li>
+                        <a href="#">10Books & references</a>
+                    </li>
+                    <li>
+                        <a href="#">11Books & references</a>
+                    </li>
+                    <li>
+                        <a href="#">12Books & references</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#">Electronics & computers<span>&rsaquo;</span></a>
+                <ul>
+                    <li>
+                        <a href="#">Audio</a>
+                    </li>
+                    <li>
+                        <a href="#">Cameras & Accessories</a>
+                    </li>
+                    <li>
+                        <a href="#">Computer Peripherals</a>
+                    </li>
+                    <li>
+                        <a href="#">Gaming</a>
+                    </li>
+                    <li>
+                        <a href="#">Health & Personal Care</a>
+                    </li>
+                    <li>
+                        <a href="#">Laptop Accessories</a>
+                    </li>
+                    <li>
+                        <a href="#">Laptop & Desktop</a>
+                    </li>
+                    <li>
+                        <a href="#">Mobile Accessories/a>
+                    </li>
+                    <li>
+                        <a href="#">Powerbank</a>
+                    </li>
+                    <li>
+                        <a href="#">Smart Wearables</a>
+                    </li>
+                    <li>
+                        <a href="#">Storage</a>
+                    </li>
+                    <li>
+                        <a href="#">Tablets</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#">Appliances<span>&rsaquo;</span></a>
+                <ul>
+                    <li>
+                        <a href="#">Televisions</a>
+                    </li>
+                    <li>
+                        <a href="#">Washing Machines</a>
+                    </li>
+                    <li>
+                        <a href="#">Air Conditioners</a>
+                    </li>
+                    <li>
+                        <a href="#">Refridgerators</a>
+                    </li>
+                    <li>
+                        <a href="#">Kitchen Appliances</a>
+                    </li>
+                    <li>
+                        <a href="#">Home Appliances</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#">Baby products<span>&rsaquo;</span></a>
+                <ul>
+                    <li>
+                        <a href="#">1Baby products</a>
+                    </li>
+                    <li>
+                        <a href="#">2Baby products</a>
+                    </li>
+                    <li>
+                        <a href="#">3Baby products</a>
+                    </li>
+                    <li>
+                        <a href="#">4Baby products</a>
+                    </li>
+                    <li>
+                        <a href="#">5Baby products</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#">Home & kitchen<span>&rsaquo;</span></a>
+                <ul>
+                    <li>
+                        <a href="#">Home Furnishing</a>
+                    </li>
+                    <li>
+                        <a href="#">Living Room</a>
+                    </li>
+                    <li>
+                        <a href="#">Kitchen & Dining</a>
+                    </li>
+                    <li>
+                        <a href="#">Bedroom Furnishing</a>
+                    </li>
+                    <li>
+                        <a href="#">Home Decor</a>
+                    </li>
+                    <li>
+                        <a href="#">Tools & utilities</a>
+                    </li>
+                    <li>
+                        <a href="#">Lighting</a>
+                    </li>
+                    <li>
+                        <a href="#">Space Saving</a>
+                    </li>
+                    <li>
+                        <a href="#">Kids Furniture</a>
+                    </li>
+                    <li>
+                        <a href="#">Pets & Gardening</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#">Repair & services<span>&rsaquo;</span></a>
+                <ul>
+                    <li>
+                        <a href="#">1Repair & servicesAutomobile</a>
+                    </li>
+                    <li>
+                        <a href="#">2Repair & servicesAutomobile</a>
+                    </li>
+                    <li>
+                        <a href="#">3Repair & servicesAutomobile</a>
+                    </li>
+                    <li>
+                        <a href="#">4Repair & servicesAutomobile</a>
+                    </li>
+                    <li>
+                        <a href="#">5Repair & servicesAutomobile</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#">Sports & fitness<span>&rsaquo;</span></a>
+                <ul>
+                    <li>
+                        <a href="#">1Sports & fitnessAutomobile</a>
+                    </li>
+                    <li>
+                        <a href="#">2Sports & fitnessAutomobile</a>
+                    </li>
+                    <li>
+                        <a href="#">3Sports & fitnessAutomobile</a>
+                    </li>
+                    <li>
+                        <a href="#">4Sports & fitnessAutomobile</a>
+                    </li>
+                    <li>
+                        <a href="#">5Sports & fitnessAutomobile</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#">Movies & games<span>&rsaquo;</span></a>
+                <ul>
+                    <li>
+                        <a href="#">1Movies & gamesAutomobile</a>
+                    </li>
+                    <li>
+                        <a href="#">2Movies & gamesAutomobile</a>
+                    </li>
+                    <li>
+                        <a href="#">3Movies & gamesAutomobile</a>
+                    </li>
+                    <li>
+                        <a href="#">4Movies & gamesAutomobile</a>
+                    </li>
+                    <li>
+                        <a href="#">5Movies & gamesAutomobile</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#">Real estate<span>&rsaquo;</span></a>
+                <ul>
+                    <li>
+                        <a href="#">1Real estateAutomobile</a>
+                    </li>
+                    <li>
+                        <a href="#">2Real estateAutomobile</a>
+                    </li>
+                    <li>
+                        <a href="#">3Real estateAutomobile</a>
+                    </li>
+                    <li>
+                        <a href="#">4Real estateAutomobile</a>
+                    </li>
+                    <li>
+                        <a href="#">5Real estateAutomobile</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <!--------------------------------------------------------------------------------->
+    <!-------------------------------BANNER------------------------------------>
+    <div class="banner">
+        <div class="imgBx">
+            <img src="css/imgbanner/iphone-12-pro.png" alt="" class="showSlide fade">
+            <img src="css/imgbanner/bicycle.jpg" alt="" class="showSlide fade">
+            <img src="css/imgbanner/video-game.jpg" alt="" class="showSlide fade">
+            <img src="css/imgbanner/canvas.jpg" alt="" class="showSlide fade">
+            <img src="css/imgbanner/tvantique.jpg" alt="" class="showSlide fade">
+        </div>
+        <ul class="controls">
+            <li onclick="plusSlides(-1);"></li>
+            <!-- prevSlide js function to slide the image banner -->
+            <li onclick="plusSlides(1);"></li>
+            <!-- nextSlide js function to slide the image banner -->
+        </ul>
+        <!-- The dots/circles -->
+        <div class="dotss" style="text-align:center">
+            <span class="dot activedot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+        </div>
+    </div>
+    <!--------------------------------------------------------------------->
+    <!--------------------------Flex-Containers(3)------------------------------------->
+    <div class="containers">
+        <!-----------------------------Single-Product-Ad------------------------------->
+        <div class="single-product-ad">
+            <img src="css\flex-container\audio-speaker.jpg" alt="">
+        </div>
+        <!----------------------------------------------------------------------------->
+        <!----------------------------------------------------------------------------->
+        <!-- alt+8377 = indian rupee symbol -->
+        <div class="flex-container-1">
+            <p class="flex-1">Pocket Friendly | Up to 80% off</p>
+            <div><img class="container-img" src="css\imgbanner\sofa.jpg" alt="">
+                <a href="#">Books | Under ₹99</a>
+            </div>
+            <div><img class="container-img" src="css\imgbanner\chess.jpg" alt="">
+                <a href="#">Clothing | Under ₹399</a>
+            </div>
+            <div><img class="container-img" src="css\imgbanner\mario.jpg" alt="">
+                <a href="#">Accessories | Under ₹49</a>
+            </div>
+            <div><img class="container-img" src="css\imgbanner\shoes.jpg" alt="">
+                <a href="#">View All Offers | Under ₹499</a>
+            </div>
+            <a href="#">End of season sale</a>
+        </div>
+        <div class="flex-container-1">
+            <p class="flex-1">Half Rate Store | Up to 50% off</p>
+            <div><img class="container-img" src="css\imgbanner\bicycle.jpg" alt="">
+                <a href="#">Books | Under ₹99</a>
+            </div>
+            <div><img class="container-img" src="css\imgbanner\boxing-gloves.jpg" alt="">
+                <a href="#">Clothing | Under ₹399</a>
+            </div>
+            <div><img class="container-img" src="css\imgbanner\cycle.jpg" alt="">
+                <a href="#">Accessories | Under ₹49</a>
+            </div>
+            <div><img class="container-img" src="css\imgbanner\teddy.jpg" alt="">
+                <a href="#">View All Offers | Under ₹499</a>
+            </div>
+            <a href="#">End of season sale</a>
+        </div>
+        <div class="flex-container-1">
+            <p class="flex-1">Store 99 | Everything in just 99</p>
+            <div><img class="container-img" src="css\imgbanner\tvantique.jpg" alt="">
+                <a href="#">Books | Under ₹99</a>
+            </div>
+            <div><img class="container-img" src="css\imgbanner\video-game.jpg" alt="">
+                <a href="#">Clothing | Under ₹399</a>
+            </div>
+            <div><img class="container-img" src="css\imgbanner\mug.jpg" alt="">
+                <a href="#">Accessories | Under ₹49</a>
+            </div>
+            <div><img class="container-img" src="css\imgbanner\camera.jpg" alt="">
+                <a href="#">View All Offers | Under ₹499</a>
+            </div>
+            <a href="#">End of season sale</a>
+        </div>
+        <div class="special">
+            <p class="flex-1">Products On Demand</p>
+            <img class="special-img" src="css\imgbanner\redmi-note-10s.jpg" alt="">
+            <a href="#">View All</a>
+        </div>
+        <!----------------------------------------------------------------------------->
+        <!------------------------Scroll-Product-Container----------------------------->
+        <div class="scroll-product-container">
+            <p class="flex-2">Deals only for you</p>
+            <div><img class="scroll-product-container-img" src="css\imgbanner\iphone-12-pro.png" alt="">
+                <a href="#">View Product</a>
+            </div>
+            <div><img class="scroll-product-container-img" src="css\imgbanner\bicycle.jpg" alt="">
+                <a href="#">View Product</a>
+            </div>
+            <div><img class="scroll-product-container-img" src="css\imgbanner\camera.jpg" alt="">
+                <a href="#">View Product</a>
+            </div>
+            <div><img class="scroll-product-container-img" src="css\imgbanner\chess.jpg" alt="">
+                <a href="#">View Product</a>
+            </div>
+            <div><img class="scroll-product-container-img" src="css\imgbanner\mario.jpg" alt="">
+                <a href="#">View Product</a>
+            </div>
+            <div><img class="scroll-product-container-img" src="css\imgbanner\mug.jpg" alt="">
+                <a href="#">View Product</a>
+            </div>
+            <div><img class="scroll-product-container-img" src="css\imgbanner\sofa.jpg" alt="">
+                <a href="#">View Product</a>
+            </div>
+            <div><img class="scroll-product-container-img" src="css\imgbanner\shoes.jpg" alt="">
+                <a href="#">View Product</a>
+            </div>
+            <div><img class="scroll-product-container-img" src="css\imgbanner\video-game.jpg" alt="">
+                <a href="#">View Product</a>
+            </div>
+            <div><img class="scroll-product-container-img" src="css\imgbanner\teddy.jpg" alt="">
+                <a href="#">View Product</a>
+            </div>
+        </div>
+        <!----------------------------------------------------------------------------->
+        <!---------------------------Flex-containers(3)-------------------------------->
+        <div class="flex-container-1">
+            <p class="flex-1">Pocket Friendly | Up to 80% off</p>
+            <div><img class="container-img" src="css\imgbanner\sofa.jpg" alt="">
+                <a href="#">Books | Under ₹99</a>
+            </div>
+            <div><img class="container-img" src="css\imgbanner\chess.jpg" alt="">
+                <a href="#">Clothing | Under ₹399</a>
+            </div>
+            <div><img class="container-img" src="css\imgbanner\mario.jpg" alt="">
+                <a href="#">Accessories | Under ₹49</a>
+            </div>
+            <div><img class="container-img" src="css\imgbanner\shoes.jpg" alt="">
+                <a href="#">View All Offers | Under ₹499</a>
+            </div>
+            <a href="#">End of season sale</a>
+        </div>
+        <div class="flex-container-1">
+            <p class="flex-1">Half Rate Store | Up to 50% off</p>
+            <div><img class="container-img" src="css\imgbanner\bicycle.jpg" alt="">
+                <a href="#">Books | Under ₹99</a>
+            </div>
+            <div><img class="container-img" src="css\imgbanner\boxing-gloves.jpg" alt="">
+                <a href="#">Clothing | Under ₹399</a>
+            </div>
+            <div><img class="container-img" src="css\imgbanner\cycle.jpg" alt="">
+                <a href="#">Accessories | Under ₹49</a>
+            </div>
+            <div><img class="container-img" src="css\imgbanner\teddy.jpg" alt="">
+                <a href="#">View All Offers | Under ₹499</a>
+            </div>
+            <a href="#">End of season sale</a>
+        </div>
+        <div class="flex-container-1">
+            <p class="flex-1">Store 99 | Everything in just 99</p>
+            <div><img class="container-img" src="css\imgbanner\tvantique.jpg" alt="">
+                <a href="#">Books | Under ₹99</a>
+            </div>
+            <div><img class="container-img" src="css\imgbanner\video-game.jpg" alt="">
+                <a href="#">Clothing | Under ₹399</a>
+            </div>
+            <div><img class="container-img" src="css\imgbanner\mug.jpg" alt="">
+                <a href="#">Accessories | Under ₹49</a>
+            </div>
+            <div><img class="container-img" src="css\imgbanner\camera.jpg" alt="">
+                <a href="#">View All Offers | Under ₹499</a>
+            </div>
+            <a href="#">End of season sale</a>
+        </div>
+        <div class="special">
+            <p class="flex-1">Products On Demand</p>
+            <img class="special-img" src="css\imgbanner\canvas.jpg" alt="">
+            <a href="#">View All</a>
+        </div>
+        <!----------------------------------------------------------------------------->
+        <!-----------------------------Single-Product-Ad------------------------------->
+        <div class="single-product-ad">
+            <img src="css\flex-container\audio-speaker.jpg" alt="">
+        </div>
+        <!----------------------------------------------------------------------------->
+        <!---------------------------Flex-containers(3)-------------------------------->
+        <div class="flex-container-1">
+            <p class="flex-1">Pocket Friendly | Up to 80% off</p>
+            <div><img class="container-img" src="css\imgbanner\sofa.jpg" alt="">
+                <a href="#">Books | Under ₹99</a>
+            </div>
+            <div><img class="container-img" src="css\imgbanner\chess.jpg" alt="">
+                <a href="#">Clothing | Under ₹399</a>
+            </div>
+            <div><img class="container-img" src="css\imgbanner\mario.jpg" alt="">
+                <a href="#">Accessories | Under ₹49</a>
+            </div>
+            <div><img class="container-img" src="css\imgbanner\shoes.jpg" alt="">
+                <a href="#">View All Offers | Under ₹499</a>
+            </div>
+            <a href="#">End of season sale</a>
+        </div>
+        <div class="flex-container-1">
+            <p class="flex-1">Half Rate Store | Up to 50% off</p>
+            <div><img class="container-img" src="css\imgbanner\bicycle.jpg" alt="">
+                <a href="#">Books | Under ₹99</a>
+            </div>
+            <div><img class="container-img" src="css\imgbanner\boxing-gloves.jpg" alt="">
+                <a href="#">Clothing | Under ₹399</a>
+            </div>
+            <div><img class="container-img" src="css\imgbanner\cycle.jpg" alt="">
+                <a href="#">Accessories | Under ₹49</a>
+            </div>
+            <div><img class="container-img" src="css\imgbanner\teddy.jpg" alt="">
+                <a href="#">View All Offers | Under ₹499</a>
+            </div>
+            <a href="#">End of season sale</a>
+        </div>
+        <div class="flex-container-1">
+            <p class="flex-1">Store 99 | Everything in just 99</p>
+            <div><img class="container-img" src="css\imgbanner\tvantique.jpg" alt="">
+                <a href="#">Books | Under ₹99</a>
+            </div>
+            <div><img class="container-img" src="css\imgbanner\video-game.jpg" alt="">
+                <a href="#">Clothing | Under ₹399</a>
+            </div>
+            <div><img class="container-img" src="css\imgbanner\mug.jpg" alt="">
+                <a href="#">Accessories | Under ₹49</a>
+            </div>
+            <div><img class="container-img" src="css\imgbanner\camera.jpg" alt="">
+                <a href="#">View All Offers | Under ₹499</a>
+            </div>
+            <a href="#">End of season sale</a>
+        </div>
+        <div class="special">
+            <p class="flex-1">Products On Demand</p>
+            <img class="special-img" src="css\imgbanner\tvantique.jpg" alt="">
+            <a href="#">View All</a>
+        </div>
+        <!----------------------------------------------------------------------------->
+        <!------------------------Scroll-Product-Container----------------------------->
+        <div class="scroll-product-container">
+            <p class="flex-2">Deals only for you!!</p>
+            <div><img class="scroll-product-container-img" src="css\imgbanner\iphone-12-pro.png" alt="">
+                <a href="#">View Product</a>
+            </div>
+            <div><img class="scroll-product-container-img" src="css\imgbanner\bicycle.jpg" alt="">
+                <a href="#">View Product</a>
+            </div>
+            <div><img class="scroll-product-container-img" src="css\imgbanner\camera.jpg" alt="">
+                <a href="#">View Product</a>
+            </div>
+            <div><img class="scroll-product-container-img" src="css\imgbanner\chess.jpg" alt="">
+                <a href="#">View Product</a>
+            </div>
+            <div><img class="scroll-product-container-img" src="css\imgbanner\mario.jpg" alt="">
+                <a href="#">View Product</a>
+            </div>
+            <div><img class="scroll-product-container-img" src="css\imgbanner\mug.jpg" alt="">
+                <a href="#">View Product</a>
+            </div>
+            <div><img class="scroll-product-container-img" src="css\imgbanner\sofa.jpg" alt="">
+                <a href="#">View Product</a>
+            </div>
+            <div><img class="scroll-product-container-img" src="css\imgbanner\shoes.jpg" alt="">
+                <a href="#">View Product</a>
+            </div>
+            <div><img class="scroll-product-container-img" src="css\imgbanner\video-game.jpg" alt="">
+                <a href="#">View Product</a>
+            </div>
+            <div><img class="scroll-product-container-img" src="css\imgbanner\teddy.jpg" alt="">
+                <a href="#">View Product</a>
+            </div>
+        </div>
+        <!---------------------------------------------------------------------->
+        <div class="flex-container-1">
+            <p class="flex-1">Pocket Friendly | Up to 80% off</p>
+            <div><img class="container-img" src="css\imgbanner\sofa.jpg" alt="">
+                <a href="#">Books | Under ₹99</a>
+            </div>
+            <div><img class="container-img" src="css\imgbanner\chess.jpg" alt="">
+                <a href="#">Clothing | Under ₹399</a>
+            </div>
+            <div><img class="container-img" src="css\imgbanner\mario.jpg" alt="">
+                <a href="#">Accessories | Under ₹49</a>
+            </div>
+            <div><img class="container-img" src="css\imgbanner\shoes.jpg" alt="">
+                <a href="#">View All Offers | Under ₹499</a>
+            </div>
+            <a href="#">End of season sale</a>
+        </div>
+        <div class="flex-container-1">
+            <p class="flex-1">Half Rate Store | Up to 50% off</p>
+            <div><img class="container-img" src="css\imgbanner\bicycle.jpg" alt="">
+                <a href="#">Books | Under ₹99</a>
+            </div>
+            <div><img class="container-img" src="css\imgbanner\boxing-gloves.jpg" alt="">
+                <a href="#">Clothing | Under ₹399</a>
+            </div>
+            <div><img class="container-img" src="css\imgbanner\cycle.jpg" alt="">
+                <a href="#">Accessories | Under ₹49</a>
+            </div>
+            <div><img class="container-img" src="css\imgbanner\teddy.jpg" alt="">
+                <a href="#">View All Offers | Under ₹499</a>
+            </div>
+            <a href="#">End of season sale</a>
+        </div>
+        <div class="flex-container-1">
+            <p class="flex-1">Store 99 | Everything in just 99</p>
+            <div><img class="container-img" src="css\imgbanner\tvantique.jpg" alt="">
+                <a href="#">Books | Under ₹99</a>
+            </div>
+            <div><img class="container-img" src="css\imgbanner\video-game.jpg" alt="">
+                <a href="#">Clothing | Under ₹399</a>
+            </div>
+            <div><img class="container-img" src="css\imgbanner\mug.jpg" alt="">
+                <a href="#">Accessories | Under ₹49</a>
+            </div>
+            <div><img class="container-img" src="css\imgbanner\camera.jpg" alt="">
+                <a href="#">View All Offers | Under ₹499</a>
+            </div>
+            <a href="#">End of season sale</a>
+        </div>
+        <div class="special">
+            <p class="flex-1">Products On Demand</p>
+            <img class="special-img" src="css\imgbanner\redmi-note-10s.jpg" alt="">
+            <a href="#">View All</a>
+        </div>
+        <!----------------------------------------------------------------------------->
+        <!-----------------------------Single-Product-Ad------------------------------->
+        <div class="single-product-ad">
+            <img src="css\flex-container\audio-speaker.jpg" alt="">
+        </div>
+        <!----------------------------------------------------------------------------->
+        <div class="back-to-top"><a href="#top">Back to Top</a></div>
+        <!---------------------------------FOOTER------------------------------------------>
+        <div class="footer">
+            <footer class="flex-all-center">
+                <p> Copyrights &copy; Rentors.com </p>
+            </footer>
+        </div>
+        <!--------------------------------------------------------------------------------->
+    </div>
+    <!--------------------------------------------------------------------------------->
+    <!--------------------------------------------------------------------------------->
+
+</body>
+
+</html>
